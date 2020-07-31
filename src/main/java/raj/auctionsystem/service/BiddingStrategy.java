@@ -36,7 +36,7 @@ public class BiddingStrategy {
         BidderInformation secondBidder = bidders.get(1);
         if(maxBidder.compareTo(secondBidder) < 0){
             maxBidder = bidders.get(1);
-            secondBidder = bidders.get(1);
+            secondBidder = bidders.get(0);
         }
         BidderInformation currentBidder;
         for (int i=2;i<bidders.size();i++){
